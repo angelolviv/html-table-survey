@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Досліження</title>
+</head>
+
+<body>
+    <header>
+        <p>Tables: <a href="https://angelolviv.github.io/html-table/">one</a> and <a href="index.html">two</a></p>
+    </header>
+    <hr>
+    <p>Дослідження про дослідження.</p>
+    <section id="form-1">
+        <h1><b>Заповність форму</b></h1>
+        <form id="survey" method="POST" action="https://formspree.io/lsoserg@ukr.net">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label>Name: <input type="text" name="name" id="name" placeholder="Your name" required autofocus="autofocus"></label>
+                <br>
+                <label>Year of birth: <input type="text" name="birth" id="birth" placeholder="31/12/1989" title="31/12/1989" required></label>
+                <br>
+                Or choose date:
+                <input type="date" name="bday">
+                <br>
+                <label>Your page on fb.com <input type="url" name="fb.com" id="fb" title="If you don`t have, next step"></label>
+                <br>
+                <label>Your UIN: <input type="text" name="uin" id="uin" title="Your UIN (10 digits)" placeholder="1234567890" pattern="[0-9]{10}" required></label>
+                <br> Your sex if you defined is:
+                <br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other<br> Your favorite manufacturer of phones is:
+                <select name="cars">
+                    <optgroup label="Smartphones">
+                        <option value="Samsung">Samsung</option>
+                        <option value="Apple">Apple</option>
+                        <option value="LG">LG</option>
+                        <option value="BlackBerry">BlackBerry</option>
+                    </optgroup>
+                    <optgroup label="Old Phones">
+                        <option value="discphone">Disc Phone</option>
+                        <option value="commutator">Commutator</option>
+                    </optgroup>
+                </select>
+                <br>
+                Input your status (maried, single, divorced):
+                <input list="status" name="status">
+                    <datalist id="status">
+                        <option value="maried">
+                        <option value="single">
+                        <option value="divorced">
+                    </datalist>
+                    <br>
+                Your weight is, kg:
+                <input type="number" name="weight" min="45" max="145" step="5" value="75">
+            </fieldset>
+
+            <input type="submit" value="Send">
+        </form>
+        <br>
+        I agree with all I have answered:
+        <form>
+            <input type="checkbox" name="agree" value="agree"> I agree
+            <br>
+            <input type="checkbox" name="right" value="right"> Everything is right 
+        </form>
+        <br>
+        For confirm your information please sign in:
+        <form id="login" method="POST" action="https://formspree.io/lsoserg@ukr.net">
+            Login:
+            <br>
+            <input type="text" name="username"><br>
+            Your password:
+            <br>
+            <input type="password" name="psw">
+            <input type="submit">
+        </form>
+        <br>
+        </section>
+    <footer>&reg; All possible and impossible is registered</footer>
+</body>
+
+</html>
